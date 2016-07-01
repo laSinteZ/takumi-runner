@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Takumi Runner",
+  "description": "This extension simply adds 'Find VK' button to jog.fm",
+  "version": "0.1",
+
+  "permissions": [
+    "https://jog.fm/*",
+    "https://walk.jog.fm/*",
+    "https://cycle.jog.fm/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://jog.fm/*",
+        "https://walk.jog.fm/*",
+        "https://cycle.jog.fm/*"
+      ],
+      "js": ["addlink.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
