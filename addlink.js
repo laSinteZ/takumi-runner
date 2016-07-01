@@ -9,7 +9,7 @@ function addLinks() {
 
         vkLink = document.createElement('a');
         vkLink.setAttribute("href", "https://vk.com/audio?q=" + authorName + "%20" + songName);
-        vkLink.setAttribute("target", "_blank"),
+        vkLink.setAttribute("target", "_blank");
         vkLink.innerHTML = "VK";
 
         listens[i].appendChild(vkLink);
