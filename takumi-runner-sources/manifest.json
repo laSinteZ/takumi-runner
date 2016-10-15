@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Takumi Runner",
-  "description": "This extension simply adds 'Find VK' button to jog.fm",
-  "version": "0.1",
+  "description": "This extension simply adds 'Find VK' and 'Find in yandex' buttons to jog.fm.",
+  "version": "0.2",
 
   "permissions": [
     "https://jog.fm/*",
