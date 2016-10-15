@@ -1,6 +1,6 @@
 function addLinks() {
 
-    var vkLink;
+    var vkLink, yaLink;
     var listens = document.getElementsByClassName("listen");
     for (i = 0; i < listens.length; i++) {
 
@@ -12,7 +12,15 @@ function addLinks() {
         vkLink.setAttribute("target", "_blank");
         vkLink.innerHTML = "VK";
 
+        yaLink = document.createElement('a');
+        yaLink.setAttribute("href", "https://music.yandex.ru/search?text=" + authorName + "%20" + songName);
+        yaLink.setAttribute("target", "_blank");
+        yaLink.innerHTML = "Ya";
+
         listens[i].appendChild(vkLink);
+        listens[i].innerHTML = listens[i].innerHTML + ' ';
+        listens[i].appendChild(yaLink);
+
     }
 }
 
